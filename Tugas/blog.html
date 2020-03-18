@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style >
+        .container{
+            width: 800px;
+            height: 1200px;
+            background-color: white;
+            /* background-color: #f5eee2; */
+            /* border: 2px solid white; */
+            margin: auto;
+            position: relative;
+        }
+
+        .judul{
+            width: 800px;
+            height: 100px;
+            background-color: whitesmoke;
+            /* border: 2px solid #f5eee2; */
+            margin: auto;
+            padding-left: 20px;
+            padding-top: 10px;
+            box-sizing: border-box;
+            text-align: center;  
+        }
+
+        .ribbon{
+            background-image: url(ribbon.png);
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 715px;
+            top: -11px;
+
+        }
+
+        .judul .judulatas{
+            font-size: 30x;
+            text-shadow: 3px 2px darkgrey;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .menu{
+            width: 800px;
+            height: 50px;
+            background-color:darkgray;
+            /* border: 2px solid black; */
+            box-sizing: border-box;
+            padding-left: 20px;
+            padding-top: 10px;
+        }
+
+        .menu a{
+            text-decoration: none;
+            color: black;
+        }
+
+        .menu a :hover{
+            background-color: lightskyblue;
+            color: white;
+        }
+
+        .banner{
+            background-color: whitesmoke;
+            width: 800px;
+            height: 300px;
+        }
+
+        /* /* .judulartikel{
+            /* padding-left: 20px;
+            padding-top: 20px; */
+         
+
+        .konten{
+            width: 800px;
+            height: 400px ;
+            padding: 20px 20px 20px 0px ;
+            overflow: auto;
+            box-sizing: border-box;
+        }
+
+        .konten img{
+            float: left;
+            padding: 20px 20px;
+        }
+
+        .galeri{
+            background-color: darkgray;
+            margin: 5px 5px 5px 5px;
+            width: 190px;
+            height: 110px;
+            float: left;
+            text-align: center;
+            background-image: url(es_krim.png);
+            background-size: cover;   
+            background-position: center; 
+            padding-top: 10px;        
+        }
+
+        /* .thumbnail {
+            width: 170px;
+            height: 120px;
+            margin: 10px auto;
+            background-color: whitesmoke;
+        } */
+
+        .judul.judulatas.judulnew{
+            /* border-radius: 30px; */
+            width: 200px;
+            height: 50px;
+            /* opacity: 0.2; */
+            background-color: blue;
+        }
+
+        .panel_mode{
+            width: 130px;
+            height: 60px;
+            padding: 15px 5px 15px 5px;
+            border-radius: 20px;
+            background-color:darkgrey;
+            right: 20px;
+            position: fixed;
+        }
+
+        .cobaevent{
+            width: 80px;
+            height: 80px;
+            background-color: yellow;
+        }
+
+        .cobaevent1{
+            width: 80px;
+            height: 80px;
+            background-color: blue;
+        }
+
+        .cobaevent2{
+            width: 80px;
+            height: 80px;
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="panel_mode" style="text-align: center;">
+        <button type="button" onclick="ubahwarna_dark()">
+            Mode Malam Hari
+        </button>
+
+        <br> <br>
+
+        <button type="button" onclick="ubahwarna_light()">
+            Mode Siang Hari
+        </button>
+    </div>
+
+    <div class="container">
+        <div class="ribbon">
+            <!-- <img src="ribbon.png"> -->
+        </div>
+
+        <div class="judulnew">
+
+        </div>
+
+        <div class="judul style="color: #fb7f64;>
+            <div class="judulnew">
+                <div class="judulatas">
+                    <h1>My Website</h1>
+                </div>
+            </div>
+        </div>
+    
+        <div class="menu" style="text-align: center; font-size: 20px;" >
+            <a href="#">Home | </a>
+            <a href="#">Profil | </a>
+            <a href="#">Contact</a>
+        </div>
+
+        <div class="banner">
+            <img src="image/banner.jpg" width="800px" height="300px">
+        </div>
+        <hr>
+
+        <div class="judulartikel" style="color: black; text-align: center;">
+            <h2>Moon</h2>
+            <p>written by Hasna</p>
+            <hr>
+
+        </div>
+
+        <div id="konten" class="konten" style="text-align: center">
+
+            <img src="image/moon.jpg" width="200px" height="150px">
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, deserunt quibusdam? Ratione mollitia est cumque ullam aliquam ducimus dicta porro! Ipsam deleniti, illo numquam error earum maiores a nostrum provident!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, cumque, pariatur earum qui sapiente sunt veritatis eos similique quidem iure, corrupti vel ullam odit mollitia aliquam. Adipisci reiciendis asperiores consectetur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non natus voluptate dolore, necessitatibus, asperiores, corrupti atque debitis nihil laborum praesentium hic adipisci accusamus sapiente? In excepturi at amet iusto molestias.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta molestias magnam corrupti quisquam! Atque repudiandae perferendis a nisi. Voluptatibus accusantium facere aliquam enim maiores quas quis dignissimos consequuntur eius sunt.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde officia ducimus sed dignissimos, blanditiis eos possimus itaque? A, vitae, natus nisi vel, facilis accusamus animi deleniti adipisci enim iste veniam.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, voluptas laudantium praesentium atque saepe commodi quae repellat neque doloremque quia sequi, quam reiciendis cum consequatur, eligendi ut placeat modi fuga.</p>
+        </div>
+        <br>
+        
+        <div class="galeri">
+            <img src="image/moon.jpg" width="150px" height="100px">
+        </div>
+
+        <div class="galeri">
+            <img src="image/moon.jpg" width="150px" height="100px">
+        </div>
+
+        <div class="galeri">
+            <img src="image/moon.jpg" width="150px" height="100px">
+        </div>
+
+        <div class="galeri">
+            <img src="image/moon.jpg" width="150px" height="100px">
+        </div>
+
+        <div class="galeri">
+            <img src="image/moon.jpg" width="150px" height="100px">
+        </div>
+
+        <div class="galeri">
+            <img src="image/moon.jpg" width="150px" height="100px">
+        </div>
+
+        <div class="galeri">
+            <img src="image/moon.jpg" width="150px" height="100px">
+        </div>
+
+        <div class="galeri">
+            <img src="image/moon.jpg" width="150px" height="100px">
+        </div>
+    
+    </div>
+
+    <!-- <div id="cobaeventku" class="cobaevent" onclick="divkelakuan()" ondblclick="divkelakuan1()">
+
+    </div> -->
+
+    <div id="cobaeventku1" class="cobaevent" onmouseup="divkelakuan2()" onmousedown="divkelakuan3()">
+
+    </div>
+
+    <script>
+        function ubahwarna_dark(){
+            document.getElementById('konten').style.backgroundColor="black";
+            document.getElementById('konten').style.color="white";
+        }
+
+        function ubahwarna_light(){
+            document.getElementById('konten').style.backgroundColor="yellow";
+            document.getElementById('konten').style.color="black";
+        }
+
+        function divkelakuan(){
+            document.getElementById('cobaeventku').className="cobaevent1";
+        }
+
+        function divkelakuan1(){
+            document.getElementById('cobaeventku').className="cobaevent2";
+        }
+
+        function divkelakuan2(){
+            document.getElementById('cobaeventku1').className="cobaevent1";
+        }
+
+        function divkelakuan3(){
+            document.getElementById('cobaeventku1').className="cobaevent2";
+        }
+    </script>
+    
+</body>
+</html>
