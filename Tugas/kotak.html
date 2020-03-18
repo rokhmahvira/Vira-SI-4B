@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .galeri{
+            width: 500px;
+            height: 400px;
+            background-color: black;
+            position: relative;
+            margin: auto;
+
+        }
+
+        .frame{
+            width: 500px;
+            height: 100px;
+            background-color: whitesmoke;
+            margin: auto;
+        }
+
+        .kotak1{
+            width: 70px;
+            height: 70px;
+            background-color: white;
+            border: red solid;
+            position: absolute;
+            margin-top: 15px;
+            margin-left: 44px ;
+        }
+
+        .kotak2{
+            width: 70px;
+            height: 70px;
+            background-color: white;
+            border: yellow solid;
+            position: absolute;
+            margin-top: 15px;
+            margin-left: 158px ;
+        }
+
+        .kotak3{
+            width: 70px;
+            height: 70px;
+            background-color: white;
+            border: green solid;
+            position: absolute;
+            margin-top: 15px;
+            margin-left: 272px ;
+        }
+
+        .kotak4{
+            width: 70px;
+            height: 70px;
+            background-color: white;
+            border: blue solid;
+            position: absolute;
+            margin-top: 15px;
+            margin-left     : 386px ;
+        }
+    </style>
+
+    <script>
+        function red(){
+            document.getElementById('galeri').style.backgroundColor="red";
+        }
+        function yellow(){
+            document.getElementById('galeri').style.backgroundColor="yellow";
+        }
+        function green(){
+            document.getElementById('galeri').style.backgroundColor="green";
+        }
+        function blue(){
+            document.getElementById('galeri').style.backgroundColor="blue";
+        }
+
+    </script>
+
+</head>
+<body>
+    <div class="galeri" id="galeri">
+       
+    </div> 
+    <div class="frame">
+        <div class="kotak1" onclick="red()">
+
+        </div>
+        <div class="kotak2" onclick="yellow()">
+
+        </div>
+        <div class="kotak3" onclick="green()">
+
+        </div>
+        <div class="kotak4" onclick="blue()">
+
+        </div>
+    </div>
+</body>
+</html>
