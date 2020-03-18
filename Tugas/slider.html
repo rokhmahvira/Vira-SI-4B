@@ -1,0 +1,97 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widht=device-width , initial-scale.0">
+    <title>Document</title>
+    
+</head>
+
+<style>
+    .sidebar1{
+        width:200px ;
+        height: 100%;
+        background-color: yellow;
+        position: fixed;
+        overflow: auto;
+        top: 0;
+        left: 0;
+        transition: width 1s;
+    }
+
+    .main1{
+        /* width: 700px;
+        height: 500px; */
+        background-color: white;
+        margin-left: 200px;
+        overflow: auto;
+    }
+
+
+    .sidebar{
+        width:0px ;
+        height:100%;
+        background-color: cadetblue;
+        position: fixed;
+        overflow: auto;
+        transition: width 0.6s;
+    }
+
+    .main{
+        width: 700px;
+        height: 500px;
+        background-color: white;
+        /* margin-left: 200px; */
+    }
+
+    .sidebar1 span{
+        float: right;
+    }
+
+
+
+</style>
+
+<body>
+    
+
+
+<div id="klikyas" class="sidebar">
+<span style="font-size: 30px; cursor: pointer;" onclick="openClose()">X</span>
+    <br>
+    <ul>
+        <li>Home</li>
+        <li>Profil</li>
+        <li>Contact Us</li>
+    </ul>
+
+</div>
+
+<div id="klikya2" class="main">
+
+    <span  style="font-size: 30px; cursor: pointer;" onclick="openNav()">&#9776</span>
+    <h1>Ini konten utama</h1>
+
+</div>
+
+
+
+
+
+
+</body>
+
+<script>
+function openNav(){
+
+// document.getElementById('klikya').className="main1";
+document.getElementById('klikyas').className="sidebar1";
+document.getElementById('klikya2').className="main1";
+}
+
+function openClose(){
+    document.getElementById('klikyas').className="sidebar";
+    document.getElementById('klikya2').className="main";
+
+}
+
+</script>
+</html>
